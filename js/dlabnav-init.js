@@ -37,7 +37,7 @@ function getUrlParams(dParam)
 	console.log(window.location.pathname)
 	var isAdminPath = window.location.pathname;
 	console.log(isAdminPath)
-	var layoutType = isAdminPath == "/true-version2/admin.html" ? "vertical" : "horizontal";
+	var layoutType = isAdminPath == "/true-version2/admin.html" || isAdminPath == "/admin.html"  ? "vertical" : "horizontal";
 	console.log(layoutType)
 
 	dlabSettingsOptions = {
