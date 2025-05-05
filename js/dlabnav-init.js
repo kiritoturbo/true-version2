@@ -34,7 +34,8 @@ function getUrlParams(dParam)
 	
 	// var currentUserRole = "<?php echo $current_user_role; ?>"; // admin hoặc user
 	// var layoutType = (currentUserRole === "admin") ? "vertical" : "horizontal";
-	var isAdminPath = window.location.pathname.startsWith("/true-version2/admin.html");
+	var isAdminPath = window.location.pathname.startsWith("/admin.html");
+	console.log(isAdminPath)
 	var layoutType = isAdminPath ? "vertical" : "horizontal";
 	console.log(layoutType)
 
