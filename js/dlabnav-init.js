@@ -34,9 +34,10 @@ function getUrlParams(dParam)
 	
 	// var currentUserRole = "<?php echo $current_user_role; ?>"; // admin hoặc user
 	// var layoutType = (currentUserRole === "admin") ? "vertical" : "horizontal";
-	var isAdminPath = window.location.pathname.startsWith("/admin.html");
+	console.log(window.location.pathname)
+	var isAdminPath = window.location.pathname;
 	console.log(isAdminPath)
-	var layoutType = isAdminPath ? "vertical" : "horizontal";
+	var layoutType = isAdminPath == "true-version2/admin.html" ? "vertical" : "horizontal";
 	console.log(layoutType)
 
 	dlabSettingsOptions = {
